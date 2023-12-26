@@ -5,6 +5,8 @@
 
 body{
     background-color: black;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+
 }
 .main{
     background-image: url(IN-en-20231218-popsignuptwoweeks-perspective_alpha_website_large.jpg);
@@ -63,6 +65,7 @@ body{
     align-items: center;
     justify-content: space-around;
     border-radius: 6px;
+    border: 1px solid white;
 
 }
 .language #lang{
@@ -72,6 +75,7 @@ body{
     font-size: 1.15rem;
     font-weight: 250;
     text-align: center;
+    cursor: pointer;
 }
 
 
@@ -93,6 +97,9 @@ body{
     justify-content: center;
 }
 
+.navbar .signIn:hover{
+    background-color: rgba(212, 23, 23, 0.902);
+}
 .main .content-box{
     width: 100%;
     position: relative;
@@ -140,7 +147,7 @@ form input{
     background-color: black;
     opacity: 0.6;
     color: white;
-    padding: 20px 24px 20px;
+    padding: 17px 24px 17px;
     border:0.5px solid white;
     border-radius: 6px;
     font-size: 1.5rem;
@@ -163,14 +170,20 @@ form .submit-btn{
     background-color: red;
     margin-left: 15px;
     border-radius: 6px;
+   
+}
+
+form .submit-btn:hover{
+    background-color: rgba(212, 23, 23, 0.902);
 }
 
 .submit-btn button{
     border: none;
-    background-color: red;
+    background-color: rgba(212, 23, 23, 0.902);
     color: white;
     font-size: 1.4rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .submit-btn img{
@@ -185,5 +198,78 @@ form .submit-btn{
     opacity: 0.5;
 }
 
+.first-box{
+    width: 100%;
+    height: 50vh;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+.first-box .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.desc h2{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.desc p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.first-box .tv video{
+    position: absolute;
+    left: 52.5%;
+    bottom: -46%;
+    z-index: -1;
+    overflow: hidden;
+}
 
+.first .second-box{
+    flex-direction: row-reverse;
+}
 
+.first .second-box img{
+    width:32vw;
+    height: fit-content;
+}
+
+.smart-phone .download {
+    width: 35vh;
+    height: 70px;
+    border: 2px solid white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 11;
+    bottom: -130%;
+    left:22%;
+    background-color: black;
+    padding: 8px;
+}
+
+.download .movie-img img{
+    margin-left: 9px;
+    width: 50px;
+    height: 55px;
+}
+.download .moive-name{
+    color: rgb(0, 72, 255);
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+.download .moive-name h3{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.download .download-icon img{
+    margin-left:30px ;
+    width: 40px;
+    height: 40px;
+}
