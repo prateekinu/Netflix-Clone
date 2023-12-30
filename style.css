@@ -238,7 +238,7 @@ form .submit-btn:hover{
 }
 
 .smart-phone .download {
-    width: 35vh;
+    width: 40vh;
     height: 70px;
     border: 2px solid white;
     border-radius: 15px;
@@ -272,4 +272,13 @@ form .submit-btn:hover{
     margin-left:30px ;
     width: 40px;
     height: 40px;
+}
+
+.first-box .device video{
+    position: absolute;
+    left: 54%;
+    bottom: -190%;
+    z-index: -1;
+    overflow: hidden;
+    width: 25%;
 }
